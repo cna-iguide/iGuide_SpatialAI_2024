@@ -6,7 +6,7 @@ This folder contains various training datasets for training a neural network. Ea
 
 The folder structure is organized as follows:
 ```
-Training_Data/
+Datasets/
 |-- Pala_Mesa_Roads_Rails/
 |  |-- images/
 |  |-- labels/

@@ -1,6 +1,6 @@
-# Training Data for Neural Network
+# Data for Neural Network
 
-This folder contains various training datasets for training a neural network. Each dataset is organized into subfolders, and each subfolder contains images and corresponding labels (masks).
+This folder contains various datasets for the neural network. Each dataset is organized into subfolders, and each subfolder contains images and corresponding labels (masks).
 
 ## Folder Structure
 
@@ -18,13 +18,13 @@ This set of subfolders gives the general idea of the organization of the dataset
 
 ### Images
 
-- **Location**: `datasetX/images/`
+- **Location**: `Pala_Mesa_Roads_Rails/images/`
 - **Formats**: `.tif`, `.png`
 - **Description**: This folder contains the input images for the neural network.
 
 ### Labels
 
-- **Location**: `datasetX/labels/`
+- **Location**: `Pala_Mesa_Roads_Rails/labels/`
 - **Formats**: `.tif`, `.png`
 - **Description**: This folder contains the corresponding masks (or labels) for the images, used for training the neural network.
 

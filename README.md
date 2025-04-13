@@ -13,16 +13,22 @@ iGuide_SpatialAI_2024/
 |-- unet.ipynb
 |-- requirements.txt
 |-- README.md
-|-- Datasets
-|-- models
-|-- resources
+|-- LICENSE.txt
+|-- Datasets/
+|-- models/
+|-- resources/
 
 ```
-
 
 - **main.ipynb**: The entry point for the project. This notebook coordinates the overall workflow, calling functions and models defined in the other notebooks.
 - **utils.ipynb**: Contains utility functions that support data preprocessing, visualization, and other auxiliary tasks.
 - **unet.ipynb**: Implements the U-Net model, a convolutional neural network designed for image segmentation tasks.
+- **requirements.txt**: Lists the Python packages required to run the project.
+- **README.md**: Provides an overview of the project, installation instructions, and usage information.
+- **LICENSE.txt**: Contains the MIT License for the project.
+- **Datasets/**: Directory to store datasets used in the project.
+- **models/**: Directory to save trained models, mask predictions, and related files.
+- **resources/**: Directory for additional resources such as images, documentation, or other files.
 
 ## Getting Started
 
@@ -34,27 +40,29 @@ To run the notebooks, you need to have the following software and libraries inst
 - [**Jupyter Notebook**](https://jupyter.org/)
 
 #### Standard library imports
-- [**os**](https://docs.python.org/3/library/os.html)
-- [**sys**](https://docs.python.org/3/library/sys.html)
-- [**Pathlib**](https://docs.python.org/3/library/pathlib.html)
-- [**warnings**](https://docs.python.org/3/library/warnings.html)
-- [**import_ipynb**](https://pypi.org/project/import-ipynb/)
+- [**os**](https://docs.python.org/3/library/os.html) \*: Provides a way of using operating system-dependent functionality.
+- [**sys**](https://docs.python.org/3/library/sys.html) \*: Provides access to some variables used or maintained by the Python interpreter.
+- [**pathlib**](https://docs.python.org/3/library/pathlib.html) \* : Object-oriented filesystem paths.
+- [**warnings**](https://docs.python.org/3/library/warnings.html) \*: Provides a way to issue warning messages.
+- [**import_ipynb**](https://pypi.org/project/import-ipynb/): Allows importing Jupyter Notebooks as modules.
 
 #### Third-party libraries
-- [**NumPy**](https://numpy.org/)
-- [**TensorFlow**](https://www.tensorflow.org/)
-- [**Matplotlib**](https://matplotlib.org/)
-- [**Scikit-Learn**](https://scikit-learn.org/)
-- [**PIL (Pillow)**](https://pillow.readthedocs.io/en/stable/index.html)
+- [**NumPy 2.1.x**](https://numpy.org/): Numerical computing with arrays and matrices.
+- [**TensorFlow 2.19.x**](https://www.tensorflow.org/): Machine learning and AI platform.
+- [**Matplotlib 3.10.x**](https://matplotlib.org/): Plotting and visualization library.
+- [**Scikit-Learn 1.6.x**](https://scikit-learn.org/): Machine learning tools for data analysis.
+- [**PIL (Pillow) 11.1.x**](https://pillow.readthedocs.io/en/stable/index.html): Image processing library.
 
-#### Python 3.x built-in libraries
-Note that these libraries should not need to be manually installed, but they are included here for reference.
-- [**shutil**](https://docs.python.org/3/library/shutil.html)
-- [**re (Regular Expressions)**](https://docs.python.org/3/library/re.html)
-- [**typing**](https://docs.python.org/3/library/typing.html)
-- [**random**](https://docs.python.org/3/library/random.html)
+#### Python 3.x built-in libraries \*
+- [**shutil**](https://docs.python.org/3/library/shutil.html): High-level file operations.
 
-**Note:** You can install these libraries using the **requirements.txt** in this repository.
+- [**re (Regular Expressions)**](https://docs.python.org/3/library/re.html): Provides support for regular expressions.
+- [**typing**](https://docs.python.org/3/library/typing.html): Support for type hints.
+- [**random**](https://docs.python.org/3/library/random.html): Generates pseudo-random numbers.
+
+**Note:** You can install these libraries using the [`requirements.txt`](requirements.txt) in this repository.
+
+\* These are standard built-in Python (3.4 or higher) libraries that **do not** need to be installed separately. 
 
 ### Installation
 
@@ -88,18 +96,11 @@ This notebook is the main entry point for the project. It orchestrates the data 
 
 ### [`utils.ipynb`](utils.ipynb)
 
-Contains utility functions for various tasks such as:
-- Data loading and preprocessing
-- Data augmentation
-- Visualization of results
-- Data saving
+Contains utility functions for data preprocessing, visualization, and dataset management. Includes both internal and public functions with detailed docstrings and comments for clarity.
 
 ### [`unet.ipynb`](unet.ipynb)
 
-Implements the U-Net model, which is used for image segmentation. This notebook defines the architecture, training loop, and evaluation metrics for the model. This notebook also contains utility functions specifically for U-Net tasks such as:
-- Preparing the U-Net model
-- Visualization of results
-- Data saving
+Implements the U-Net model and its associated functions for image segmentation. Includes both internal and public functions with detailed docstrings and comments for clarity.
 
 ## License
 

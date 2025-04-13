@@ -2,7 +2,7 @@
 
 ## Overview
 
-**iGuide_SpatialAI_2024** is a project focused on spatial artificial intelligence. The project comprises three main Jupyter notebooks: `main.ipynb`, `utils.ipynb`, and `unet.ipynb`. The primary workflow is executed from the `main.ipynb` notebook, which leverages utility functions and a U-Net model for spatial data processing.
+**iGuide_SpatialAI_2024** is a project focused on spatial artificial intelligence. The project comprises three main Jupyter notebooks: [`main.ipynb`](main.ipynb), [`utils.ipynb`](utils.ipynb), and [`unet.ipynb`](unet.ipynb). The primary workflow is executed from the [`main.ipynb`](main.ipynb) notebook, which leverages utility functions and a U-Net model for spatial data processing.
 
 ## Repository Structure
 
@@ -48,6 +48,7 @@ To run the notebooks, you need to have the following software and libraries inst
 - [**PIL (Pillow)**](https://pillow.readthedocs.io/en/stable/index.html)
 
 #### Python 3.x built-in libraries
+Note that these libraries should not need to be manually installed, but they are included here for reference.
 - [**shutil**](https://docs.python.org/3/library/shutil.html)
 - [**re (Regular Expressions)**](https://docs.python.org/3/library/re.html)
 - [**typing**](https://docs.python.org/3/library/typing.html)
@@ -75,30 +76,34 @@ To run the notebooks, you need to have the following software and libraries inst
     jupyter notebook
     ```
 
-2. Navigate to the `main.ipynb` notebook and open it.
+2. Navigate to the [`main.ipynb`](main.ipynb) notebook and open it.
 
-3. Execute the cells in `main.ipynb` to run the project. This notebook will call functions from `utils.ipynb` and use the U-Net model from `unet.ipynb` to process spatial data.
+3. Execute the cells in [`main.ipynb`](main.ipynb) to run the project. This notebook will call functions from [`utils.ipynb`](utils.ipynb) and use the U-Net model from [`unet.ipynb`](unet.ipynb) to process spatial data.
 
 ## Usage
 
-### main.ipynb
+### [`main.ipynb`](main.ipynb)
 
 This notebook is the main entry point for the project. It orchestrates the data loading, preprocessing, model training, and evaluation steps.
 
-### utils.ipynb
+### [`utils.ipynb`](utils.ipynb)
 
 Contains utility functions for various tasks such as:
 - Data loading and preprocessing
 - Data augmentation
 - Visualization of results
+- Data saving
 
-### unet.ipynb
+### [`unet.ipynb`](unet.ipynb)
 
-Implements the U-Net model, which is used for image segmentation. This notebook defines the architecture, training loop, and evaluation metrics for the model.
+Implements the U-Net model, which is used for image segmentation. This notebook defines the architecture, training loop, and evaluation metrics for the model. This notebook also contains utility functions specifically for U-Net tasks such as:
+- Preparing the U-Net model
+- Visualization of results
+- Data saving
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+The code and notebooks associated with this project are licensed under the MIT License. See the [LICENSE](LICENSE.txt) for more details.
 
 ## Acknowledgements
 

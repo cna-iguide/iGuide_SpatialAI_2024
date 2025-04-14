@@ -22,7 +22,7 @@ iGuide_SpatialAI_2024/
 
 - **main.ipynb**: The entry point for the project. This notebook coordinates the overall workflow, calling functions and models defined in the other notebooks.
 - **utils.ipynb**: Contains utility functions that support data preprocessing, visualization, and other auxiliary tasks.
-- **unet.ipynb**: Implements the U-Net model, a convolutional neural network designed for image segmentation tasks.
+- **unet.ipynb**: Implements the U-Net model, a convolutional neural network designed for image segmentation tasks, and functions associated with the U-Net.
 - **requirements.txt**: Lists the Python packages required to run the project.
 - **README.md**: Provides an overview of the project, installation instructions, and usage information.
 - **LICENSE.txt**: Contains the MIT License for the project.
